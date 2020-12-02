@@ -1,0 +1,64 @@
+<html>
+    <body style='background-size: cover;  background-color: #1c1f29; height: 1000px; width: cover; font-family: "helvetica neue";'>
+<div style="margin-left: 50px;
+    margin-top: 100px;
+    background-color:#0a2247ef; 
+    background-size: cover;
+    opacity: 0.9;
+    max-width: 280px;
+    padding: 20px;
+    box-shadow: 15px 75px 80px rgba(2, 2, 2, 0.753);">
+    <div class="css-box">
+        <h4 class="css-text">CSS3</h4>
+        <p class="css-text para">A cascade of style</p>
+        <p class="css-text para">Succinct points</p>
+        <p class="css-text para">Some text here</p>
+    </div>
+</div>
+</body>
+<style>
+    :root {
+        --gradient: linear-gradient(
+            200deg,
+            #791515ab, 10%,
+            #1a2f8bc2 25%,
+            #04070fb9 50%
+        )
+    }
+    .css-box {
+        overflow: hidden;
+        margin: auto auto;
+        padding: 10px;
+        height: 220px;
+        width: 245px;
+        background-image: var(--gradient);
+        background-size: 500px 500px;
+        background-position: bottom;
+        transition: background-position 1s;
+    }
+
+
+    .css-box:hover {
+        background-position: top;
+    }
+
+
+
+    .css-text {
+        color: #bf4e4e;
+        font-family: helvetica;
+        margin-left: -150px;
+        transition: margin-left 1s;
+    }
+
+    .para {
+        color: white;
+    }
+
+
+    .css-box:hover > .css-text {
+        margin-left: 0;
+    }
+</style>
+</html>
+
